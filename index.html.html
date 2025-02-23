@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+
+        .red{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 15%;
+            
+        }
+        .redball1,.redball2,.redball3{
+            background-color: rgb(243, 89, 89);
+            height: 50px;
+            border-radius: 80px;
+            width: 50px;
+       }
+       .redball1{
+          animation-name:anime;
+          animation-duration: 2s;
+          animation-delay: 1s;
+          animation-iteration-count: infinite;
+       }
+       .redball2{
+          animation-name:anime;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+       }
+       .redball3{
+          animation-name:anime;
+          animation-duration: 4s;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+       }
+
+
+       @keyframes anime{
+        0%{
+            transform: translate(0px,-100px);
+        }
+        55%{
+           transform: translate(0px,100px); 
+        }
+        100%{
+           transform: translate(0px,-100px); 
+        }
+
+       }
+
+       .greendot1,.greendot2,.greendot3{
+        background-color: rgb(116, 205, 116);
+        height: 20px;
+        width: 20px;
+        border-radius: 30px;
+       }
+       .green{
+        display: flex;
+        gap: 9px;
+        align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20%;
+       
+       }
+       .greendot1{
+        animation-name: anime2;
+          animation-duration: 3s;
+          animation-delay: 1s;
+          animation-iteration-count: infinite;
+       }
+       .greendot2{
+        animation-name: anime2;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+       }
+       .greendot3{
+        animation-name: anime2;
+          animation-duration:2s;
+          animation-delay: 3s;
+          animation-iteration-count: infinite;
+       }
+@keyframes anime2{
+    0%{
+        transform: scale(0.4);
+        background-color:rgb(171, 202, 171);
+    }
+    55%{
+           transform: scale(1.5);
+           background-color: rgb(117, 226, 117);
+    }
+    100%{
+        transform: scale(0.4);
+        background-color:rgb(171, 202, 171);
+    }
+}
+    </style>
+</head>
+<body>
+    <center>
+        <div class="red">
+    <div class="redball1">
+
+    </div>
+    <div class="redball2">
+
+    </div>
+    <div class="redball3">
+
+    </div>
+</div>
+</center>
+<center>
+    <div class="green">
+<div class="greendot1">
+
+</div>
+<div class="greendot2">
+
+</div>
+<div class="greendot3">
+
+</div>
+</div>
+</center>
+
+</body>
+</html>
